@@ -1,14 +1,16 @@
 /* styles.css
    Elegant portfolio with subtle animations and glass cards.
+   Color palette updated to pink accents as requested.
    Edit color variables and spacing to match your brand.
 */
 
 :root{
   --bg:#0f1724;
   --card:#0b1220;
-  --muted:rgba(255,255,255,0.65);
-  --accent-1:#7c5cff;
-  --accent-2:#3dd5f3;
+  --muted:rgba(255,255,255,0.75);
+  /* Pink accents */
+  --accent-1:#ff66a3; /* primary pink */
+  --accent-2:#ff9acb; /* secondary lighter pink */
   --glass: rgba(255,255,255,0.04);
   --radius:14px;
   --container-max:1100px;
@@ -82,8 +84,8 @@ body{
 .blobs{position:absolute;inset:0;pointer-events:none;z-index:0}
 .blob{position:absolute;filter:blur(36px);opacity:0.6}
 .b1{width:360px;height:360px;background:linear-gradient(135deg,var(--accent-1),var(--accent-2));left:-12%;top:-8%;border-radius:50%;animation:float1 8s ease-in-out infinite}
-.b2{width:260px;height:260px;background:linear-gradient(135deg,#4de0c8,var(--accent-1));right:-10%;top:10%;border-radius:50%;animation:float2 10s ease-in-out infinite}
-.b3{width:180px;height:180px;background:linear-gradient(135deg,var(--accent-2),#9f9cff);left:20%;bottom:-6%;border-radius:50%;animation:float3 12s ease-in-out infinite}
+.b2{width:260px;height:260px;background:linear-gradient(135deg,#ffc1e8,var(--accent-1));right:-10%;top:10%;border-radius:50%;animation:float2 10s ease-in-out infinite}
+.b3{width:180px;height:180px;background:linear-gradient(135deg,var(--accent-2),#ffd9ee);left:20%;bottom:-6%;border-radius:50%;animation:float3 12s ease-in-out infinite}
 @keyframes float1{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-18px) scale(1.03)}}
 @keyframes float2{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-14px) rotate(6deg)}}
 @keyframes float3{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px) scale(1.05)}}
